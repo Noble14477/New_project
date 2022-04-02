@@ -1,1 +1,1 @@
-# New_project
+Welcome to my fist git practice
