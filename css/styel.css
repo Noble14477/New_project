@@ -112,6 +112,8 @@ main .container .form #btn {
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
+  background: white;
+  padding: 10px;
 }
 
 #display_section .container {
@@ -125,6 +127,11 @@ main .container .form #btn {
   margin-bottom: 30px;
 }
 
+#display_section .container .player {
+  background: white;
+  padding: 30px;
+}
+
 #display_section .container .player #player {
   font-size: 30px;
   color: green;
@@ -133,6 +140,11 @@ main .container .form #btn {
 #display_section .container .player #score {
   color: green;
   font-size: 25px;
+}
+
+#display_section .container .computer {
+  background: white;
+  padding: 30px;
 }
 
 #display_section .container .computer #computer {
@@ -146,12 +158,12 @@ main .container .form #btn {
 }
 
 #computerSelect {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
 }
 
 #computerSelect p {
-  font-size: 20px;
+  font-size: 25px;
   color: red;
 }
 
@@ -165,11 +177,24 @@ main .container .form #btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  margin-top: 20px;
+}
+
+#botton-section img {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  width: 320px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+#botton-section img:hover {
+  -webkit-transform: scale(1.2) rotate(45deg);
+          transform: scale(1.2) rotate(45deg);
 }
 
 #btn1 {
-  background: brown;
   border: none;
   padding: 40px 80px;
   font-size: 18px;
@@ -177,7 +202,6 @@ main .container .form #btn {
 }
 
 #btn2 {
-  background: #015aff;
   border: none;
   padding: 40px 80px;
   font-size: 18px;
@@ -185,7 +209,6 @@ main .container .form #btn {
 }
 
 #btn3 {
-  background: green;
   border: none;
   padding: 40px 80px;
   font-size: 18px;
@@ -194,7 +217,7 @@ main .container .form #btn {
 
 #result-section p {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
   font-size: 30px;
 }
 /*# sourceMappingURL=styel.css.map */

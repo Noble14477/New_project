@@ -121,6 +121,9 @@ main{
             text-align: center;
             font-size: 30px;
             margin-top: 20px;
+            background: white;
+            padding: 10px;
+            
         }
     }
     .container{
@@ -130,6 +133,9 @@ main{
         margin-bottom: 30px;
 
         .player{
+            background: white;
+            padding: 30px;
+
             #player{
                 font-size: 30px;
                 color: green;
@@ -140,6 +146,8 @@ main{
             }
         }
         .computer{
+            background: white;
+            padding: 30px;
             #computer{
                 font-size: 30px;
                 color: red;
@@ -152,10 +160,10 @@ main{
     }
 }
 #computerSelect{
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     p{
-        font-size: 20px;
+        font-size: 25px;
         color: red;
     }
 }
@@ -163,26 +171,36 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 20px;
+
+    img{
+        cursor: pointer;
+        transform: scale(1.1);
+        width: 320px;
+        transition: .5s ease-out;
+        &:hover{
+            transform: scale(1.2) rotate(45deg);
+        }
+    }
 }
 
 #btn1{
-    background: brown;
     border: none;
     padding: 40px 80px;
     font-size: 18px;
     border-radius: 10px;
 }
 #btn2{
-    background: rgb(1, 90, 255);
+    
     border: none;
     padding: 40px 80px;
     font-size: 18px;
     border-radius: 10px;
+    
 
 }
 #btn3{
-    background: green;
+    
     border: none;
     padding: 40px 80px;
     font-size: 18px;
@@ -192,7 +210,7 @@ main{
 #result-section{
     p{
         text-align: center;
-        margin-top: 100px;
+        margin-top: 10px;
         font-size: 30px;
     }
 }

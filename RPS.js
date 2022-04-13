@@ -20,18 +20,18 @@ function playRound(playerSelection, computerSelection){
 //    computerSelection = computerPlay().toLowerCase();
 
    if(playerSelection === "Rock" && computerSelection === "Scissors"){
-        playerScore += 1
+        playerScore++
         return "You Won"
    }else if(playerSelection === "Scissors" && computerSelection === "Paper"){
-        playerScore += 1;
+        playerScore++;
     return "You Won"
    }else if(playerSelection == "Paper" && computerSelection == "Rock"){
-        playerScore += 1;
+        playerScore++;
        return "You won"
     }else if (playerSelection === computerSelection){
         return "TIE"
     }else{
-        computerScore += 1;
+        computerScore++;
        return "Computer Won"
    };
   
@@ -42,7 +42,7 @@ let computerSelection = "";
 
 function game() {
    
-    
+   
     btn1.addEventListener("click", () => {
         playerSelection = "Rock"
         computerSelection = computerPlay()
@@ -50,7 +50,17 @@ function game() {
         result.textContent = playRound(playerSelection, computerSelection)
         playerScoreEl.textContent = playerScore
         computerScoreEl.textContent = computerScore
-        
+        if (playerScore === 5 ) {
+            result.textContent = "Player defeated computer"
+            playerScoreEl.textContent = 5
+
+            setTimeout("location.reload();", 2000)
+        } else if (computerScore === 5) {
+         result.textContent = "Computer defeated you"
+         computerScoreEl.textContent = 5
+         setTimeout("location.reload();", 2000)
+
+        }
     })
     btn2.addEventListener("click", () => {
         playerSelection = "Paper"
@@ -59,6 +69,18 @@ function game() {
         result.textContent = playRound(playerSelection, computerSelection)
         playerScoreEl.textContent = playerScore
         computerScoreEl.textContent = computerScore
+        if (playerScore === 5 ) {
+            result.textContent = "Player defeated computer"
+            playerScoreEl.textContent = 5
+            setTimeout("location.reload();", 2000)
+
+        } else if (computerScore === 5) {
+         result.textContent = "Computer defeated you"
+         computerScoreEl.textContent = 5
+
+            setTimeout("location.reload();", 2000)
+         
+        }
     })
     btn3.addEventListener("click", () => {
         playerSelection = "Scissors"
@@ -67,8 +89,20 @@ function game() {
         result.textContent = playRound(playerSelection, computerSelection)
         playerScoreEl.textContent = playerScore
         computerScoreEl.textContent = computerScore
+        if (playerScore === 5 ) {
+            result.textContent = "Player defeated computer"
+            playerScoreEl.textContent = 5
+
+               setTimeout("location.reload();", 2000)
+
+        } else if (computerScore === 5) {
+         result.textContent = "Computer defeated you"
+         computerScoreEl.textContent = 5
+            setTimeout("location.reload();", 2000)
+
+        }
     })
-   
+  
 
 }
 game()
