@@ -1,7 +1,8 @@
+let playerScore = 0;
+let computerScore = 0;
 function computerPlay(){
     let gameSetUp = ["Rock", "Paper", "Scissors"];
     let randomEl = Math.floor(Math.random() * gameSetUp.length);
-    console.log(gameSetUp[randomEl])
     return gameSetUp[randomEl]
 }
 
@@ -10,31 +11,48 @@ function playRound(playerSelection, computerSelection){
 //    computerSelection = computerPlay().toLowerCase();
 
    if(playerSelection === "Rock" && computerSelection === "Scissors"){
+        playerScore += 1
         return "You Won"
    }else if(playerSelection === "Scissors" && computerSelection === "Paper"){
+        playerScore += 1;
+    
     return "You Won"
    }else if(playerSelection == "Paper" && computerSelection == "Rock"){
-    return "You won"
-   }else if (playerSelection === computerSelection){
-    return "TIE"
-   }else{
+        playerScore += 1;
+
+       return "You won"
+    }else if (playerSelection === computerSelection){
+        return "TIE"
+    }else{
+        computerScore += 1;
        return "Computer Won"
    };
     
 
    
 }
-const playerSelection = "Paper";
-console.log(playerSelection)
-const computerSelection = computerPlay()
-console.log(playRound(playerSelection, computerSelection))
 
-let score = 0;
+let playerSelection = "";
+let computerSelection = "";
+
+
+
+
 function game() {
-    playRound()
-   
+   for (let i = 0; i < 5; i++) {
+    playerSelection = prompt("Enter a weapon");
+    console.log(playerSelection)
+    computerSelection = computerPlay();
+    console.log(computerSelection)
+    console.log(playRound(playerSelection, computerSelection))
+    console.log(playerScore, computerScore)
+
+       
+   }
 
 }
+
 game()
+
 
 
