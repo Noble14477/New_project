@@ -4,59 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="css/styel.css">
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
-    <h1>this is a test header</h1>
-    <!-- <main id="main">
-       <h1>Ajax Forms </h1>
-       <div class="container">
-           <div class="header">
-               <h2>Create Account</h2>
-           </div>
-           <form action="" class="form" id="form">
-               <div class="form-control ">
-                   <label for="username">Username</label>
-                   <input type="text" id="username" placeholder="eg. Noble2233">
-                   <i class="fas fa-check-circle"></i>
-                   <i class="fas fa-exclamation-circle"></i>
-                   <small>Error Message</small>
-               </div>
-               <div class="form-control ">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="eg. Noble@gmail.com">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="passowrd">Password</label>
-                <input type="text" id="password" placeholder="eg. 112288RRR" minlength="5" >
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="passowrd2">Retype Passowrd</label>
-                <input type="text" id="password2" placeholder="eg. 112288RRR" minlength="5">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error Message</small>
-            </div>
-            <button id="btn" >Submit</button>
-            
-            
-           </form>
-       </div>
 
-       
-    </main> -->
+    <section id="display_section">
+        <div class="headings">
+            <h1>THE ROCK, PAPER, SCISSORS GAME</h1>
+        </div>
+        <div class="container">
+
+            <div class="player">
+                <h3 id="player">Player</h3>
+                <h3 id="score">Score: <span id="player-score"></span></h3>
+            </div>
+            <div class="computer">
+                <h3 id="computer">Computer</h3>
+                <h3 id="score">Score: <span id="computer-score"></span></h3>
+            </div>
+        </div>
+        
+    </section>
+    <section id="computerSelect">
+        <p >Computer's Selection: <span id="comSelect"></span></p>
+    </section>
+    <section id="botton-section">
+        <button id="btn1">Rock</button>
+        <button id="btn2">Paper</button>
+        <button id="btn3">Scissors</button>
+    </section>
+    <section id="result-section">
+        <p id="result">result</p>
+    </section>
     
     <script src="app.js"></script>
     <script src="RPS.js"></script>
-    <script src="ajaxform.js"></script>
-         
 </body>
 </html>

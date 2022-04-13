@@ -7,17 +7,7 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-  background: #01013b;
+  background: wheat;
 }
 
 main h1 {
@@ -116,5 +106,95 @@ main .container .form #btn {
   font-family: inherit;
   color: white;
   cursor: pointer;
+}
+
+#display_section .headings h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#display_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#display_section .container .player #player {
+  font-size: 30px;
+  color: green;
+}
+
+#display_section .container .player #score {
+  color: green;
+  font-size: 25px;
+}
+
+#display_section .container .computer #computer {
+  font-size: 30px;
+  color: red;
+}
+
+#display_section .container .computer #score {
+  color: red;
+  font-size: 25px;
+}
+
+#computerSelect {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#computerSelect p {
+  font-size: 20px;
+  color: red;
+}
+
+#botton-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+#btn1 {
+  background: brown;
+  border: none;
+  padding: 40px 80px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#btn2 {
+  background: #015aff;
+  border: none;
+  padding: 40px 80px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#btn3 {
+  background: green;
+  border: none;
+  padding: 40px 80px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#result-section p {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=styel.css.map */
