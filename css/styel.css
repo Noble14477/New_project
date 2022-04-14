@@ -129,6 +129,7 @@ main .container .form #btn {
 
 #display_section .container .player {
   background: white;
+  border-radius: 10px;
   padding: 30px;
 }
 
@@ -144,6 +145,7 @@ main .container .form #btn {
 
 #display_section .container .computer {
   background: white;
+  border-radius: 10px;
   padding: 30px;
 }
 
@@ -184,7 +186,6 @@ main .container .form #btn {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  width: 320px;
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
 }
@@ -196,28 +197,40 @@ main .container .form #btn {
 
 #btn1 {
   border: none;
-  padding: 40px 80px;
   font-size: 18px;
   border-radius: 10px;
+  width: 170px;
 }
 
 #btn2 {
   border: none;
-  padding: 40px 80px;
   font-size: 18px;
   border-radius: 10px;
+  width: 200px;
 }
 
 #btn3 {
   border: none;
-  padding: 40px 80px;
   font-size: 18px;
   border-radius: 10px;
+  width: 150px;
 }
 
 #result-section p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 50px;
   font-size: 30px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+#copy {
+  text-align: center;
+}
+
+#copy p {
+  margin: 10px;
 }
 /*# sourceMappingURL=styel.css.map */

@@ -134,6 +134,7 @@ main{
 
         .player{
             background: white;
+            border-radius: 10px;
             padding: 30px;
 
             #player{
@@ -147,6 +148,7 @@ main{
         }
         .computer{
             background: white;
+            border-radius: 10px;
             padding: 30px;
             #computer{
                 font-size: 30px;
@@ -176,7 +178,7 @@ main{
     img{
         cursor: pointer;
         transform: scale(1.1);
-        width: 320px;
+        // width: 200px;
         transition: .5s ease-out;
         &:hover{
             transform: scale(1.2) rotate(45deg);
@@ -186,31 +188,45 @@ main{
 
 #btn1{
     border: none;
-    padding: 40px 80px;
+    // padding: 40px 80px;
     font-size: 18px;
     border-radius: 10px;
+    width: 170px;
+
 }
 #btn2{
     
     border: none;
-    padding: 40px 80px;
+    // padding: 40px 80px;
     font-size: 18px;
     border-radius: 10px;
+    width: 200px;
+
     
 
 }
 #btn3{
     
     border: none;
-    padding: 40px 80px;
+    // padding: 40px 80px;
     font-size: 18px;
     border-radius: 10px;
+    width: 150px;
 
 }
 #result-section{
     p{
         text-align: center;
-        margin-top: 10px;
+        margin-top: 50px;
         font-size: 30px;
+    }
+}
+hr{
+    margin-top: 30px;
+}
+#copy{
+    text-align: center;
+    p{
+        margin: 10px;
     }
 }

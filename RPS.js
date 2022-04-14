@@ -16,8 +16,6 @@ function computerPlay(){
 }
 
 function playRound(playerSelection, computerSelection){
-//    playerSelection = playerSelection.toLowerCase();
-//    computerSelection = computerPlay().toLowerCase();
 
    if(playerSelection === "Rock" && computerSelection === "Scissors"){
         playerScore++
